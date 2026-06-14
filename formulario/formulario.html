@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empresas</title>
+</head>
+<body>
+    <h1>Cadastro de Empresas Interessadas no Perfil Profissional</h1>
+    <form>
+        <!--dados da empresa-->
+        <fieldset>
+            <legend>Dados da Empresa</legend>
+            <label for="empresa">Nome da empresa:</label><br>
+            <input type="text" id="empresa" name="empresa" size="40" maxlength="60"><br><br>
+            <label for="responsavel">Nome do responsável:</label><br>
+            <input type="text" id="responsavel" name="responsavel" size="40" maxlength="60"><br><br>
+            <label for="email">E-mail da empresa:</label><br>
+            <input type="email" id="email" name="email" size="40" maxlength="80"><br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" size="20"><br><br>
+            <label for="site">Site da empresa:</label><br>
+            <input type="url" id="site" name="site" size="40"><br><br>
+            <label for="estado">Estado da empresa:</label><br>
+            <select id="estado" name="estado">
+                <option>Minas Gerais</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Espírito Santo</option>
+                <option>Paraná</option>
+            </select>
+        </fieldset>
+        <br>
+        <!--nformações da vaga-->
+        <fieldset>
+            <legend>Informações da Vaga</legend>
+            <label for="vaga">Cargo/Vaga oferecida:</label><br>
+            <input type="text" id="vaga" name="vaga" size="40" maxlength="50"><br><br>
+            <label for="qtd">Quantidade de vagas:</label><br>
+            <input type="number" id="qtd" name="qtd"><br><br>
+            <label for="entrevista">Data da entrevista:</label><br>
+            <input type="date" id="entrevista" name="entrevista"><br><br>
+            <label for="salario">Faixa salarial (R$):</label><br>
+            <input type="number" id="salario" name="salario"><br><br>
+            <label>Tipo de contratação:</label><br>
+            <input type="radio" id="clt" name="contratacao" value="CLT" checked>
+            <label for="clt">CLT</label><br>
+            <input type="radio" id="pj" name="contratacao" value="PJ">
+            <label for="pj">PJ</label><br>
+            <input type="radio" id="estagio" name="contratacao" value="Estágio">
+            <label for="estagio">Estágio</label><br>
+            <input type="radio" id="freelancer" name="contratacao" value="Freelancer">
+            <label for="freelancer">Freelancer</label><br><br>
+            <label>Benefícios oferecidos:</label><br>
+            <input type="checkbox" id="vt" name="beneficios" value="Vale Transporte" checked>
+            <label for="vt">Vale Transporte</label><br>
+            <input type="checkbox" id="va" name="beneficios" value="Vale Alimentação">
+            <label for="va">Vale Alimentação</label><br>
+            <input type="checkbox" id="ps" name="beneficios" value="Plano de Saúde">
+            <label for="ps">Plano de Saúde</label><br>
+            <input type="checkbox" id="ho" name="beneficios" value="Home Office">
+            <label for="ho">Home Office</label><br>
+            <input type="checkbox" id="sv" name="beneficios" value="Seguro de Vida">
+            <label for="sv">Seguro de Vida</label><br><br>
+            <label for="descricao">Descrição da vaga:</label><br>
+            <textarea id="descricao" name="descricao" rows="5" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <!--dados do aluno-->
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+            <label for="nomeAluno">Nome completo:</label><br>
+            <input type="text" id="nomeAluno" name="nomeAluno"
+                   value="Eliza Fernanda Moutinho Ribeiro"
+                   size="40" maxlength="80">
+                   <br><br>
+            <label for="emailAluno">E-mail:</label><br>
+            <input type="email" id="emailAluno" name="emailAluno"
+                   value="elizafernandamribeiro2009@gmail.com"
+                   size="40">
+                   <br><br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"
+                   value="Ouro Preto"><br><br>
+            <label for="curso">Curso:</label><br>
+            <input type="text" id="curso" name="curso"
+                   value="Automação Industrial"><br><br>
+            <!--campo preenchido automaticamente usando value-->
+            <label for="area">Área profissional de interesse:</label><br>
+            <input type="text" id="area" name="area"
+                   value="Engenharia de Controle e Automação"><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Cadastro">
+        <input type="reset" value="Limpar Formulário">
+    </form>
+</body>
+</html>
